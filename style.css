@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;400;500;700&family=Inter&family=Poppins:wght@300&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background-color: #27293e;
+}
+h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 5px;
+    color: #fff;
+    transition: opacity 0.5s; /* Agrega una transición de opacidad */
+}
+header {
+    text-align: center;
+    position: relative;
+    margin-top: 50px; /* Margen superior del encabezado */
+}
+#search {
+    display: flex; /* Usar flexbox para centrar elementos */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    font-size: 1rem;
+}
+input {
+    width: 200px; /* Ancho del campo de búsqueda */
+    padding: 10px;
+    padding-right: 35px;
+    background-color: transparent;
+    border: 1px solid #a0a0a0;
+    color: #fff;
+    padding: 0.7rem;
+    border-radius: 3px;
+}
+button {
+    background-color: #F6AE2D; /* Color amarillo */
+    padding: 12px 20px; /* Ajusta el tamaño del botón */
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    cursor: pointer;
+}
+.line {
+    background-color: #F6AE2D; /* Color de la franja */
+    height: 2px; /* Grosor de la franja */
+    width: 16%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: -1; /* Coloca la franja detrás del texto */
+}
+ /* Aplica una opacidad de 0 al encabezado cuando haces scroll hacia abajo */
+ body.scrolled h1 {
+    opacity: 0;
+}
