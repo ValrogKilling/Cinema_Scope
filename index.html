@@ -15,10 +15,18 @@
     <header>
         <form id="form">
             <div id="search">
-                <input type="text" placeholder="Enter movie name here" class="search">
-                <button><i class="fas fa-search"></i></button> <!-- Icono de búsqueda Font Awesome -->
+                <input type="text" placeholder="Enter movie name here" class="search" id="movie-name">
+                <button id="search-btn"><i class="fas fa-search"></i></button> <!-- Icono de búsqueda Font Awesome -->
             </div>
+            <div id="result"></div>
         </form>
     </header>
+
+    <script src="index.js"></script>
+
+    <script>
+        // Ejecutar la búsqueda de películas al cargar la ventana
+        window.addEventListener("load", getMovie);
+    </script>
 </body>
 </html>
